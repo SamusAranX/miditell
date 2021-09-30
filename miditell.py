@@ -43,9 +43,6 @@ def get_sf2_for_midi(midi_path):
 	base_sf2 = join(midi_dir, f"{midi_base}.sf2")
 	dir_sf2 = join(midi_dir, f"{midi_dir_base}.sf2")
 
-	print(base_sf2)
-	print(dir_sf2)
-
 	if exists(base_sf2):
 		return base_sf2
 	elif exists(dir_sf2):
@@ -59,8 +56,6 @@ def get_sf2_for_midi(midi_path):
 
 
 def main(args):
-	print(args)
-
 	if not args.soundfont:
 		args.soundfont = get_sf2_for_midi(args.input)
 
