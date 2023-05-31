@@ -22,7 +22,7 @@ def get_sf2_instruments(path):
 	for b in range(128):
 		instruments[b] = {}
 		for i in range(128):
-			inst_name = sf2_file.get_instrument_name(bank_num=b, preset_num=i)
+			inst_name = sf2_file.get_instrument_name(bank=b, preset=i)
 			if not inst_name:
 				if i == 0:
 					# probably found an empty bank. abort

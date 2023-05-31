@@ -1,0 +1,2 @@
+midi @ git+https://github.com/vishnubob/python-midi@python3
+sf2_loader==1.24
